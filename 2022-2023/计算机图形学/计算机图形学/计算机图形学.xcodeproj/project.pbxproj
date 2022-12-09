@@ -1,0 +1,1492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1003D68928DB209900CC41D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1003D68828DB209900CC41D3 /* main.c */; };
+		1003D68D28DB20A900CC41D3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1003D68E28DB20B000CC41D3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		1003D69728DB2FA200CC41D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1003D69628DB2FA200CC41D3 /* main.c */; };
+		1003D69B28DB2FB100CC41D3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		1003D69C28DB2FB600CC41D3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1003D6A428DC925D00CC41D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1003D6A328DC925D00CC41D3 /* main.c */; };
+		1003D6A828DC926900CC41D3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1003D6A928DC926E00CC41D3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		1003D6B128DFDA3600CC41D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1003D6B028DFDA3600CC41D3 /* main.c */; };
+		1003D6B528DFDA5600CC41D3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1003D6B628DFDA5B00CC41D3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		1003D6C928E3294600CC41D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1003D6C828E3294600CC41D3 /* main.c */; };
+		1003D6CD28E3295100CC41D3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1003D6CE28E3295500CC41D3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		1028A45F28FAA4E2002B658D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1028A45E28FAA4E2002B658D /* main.c */; };
+		1028A46328FAA4EA002B658D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		1028A46428FAA4EF002B658D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		102A882928E4561B000DEFA9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 102A882828E4561B000DEFA9 /* main.c */; };
+		102A882D28E4562C000DEFA9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		102A882E28E45633000DEFA9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		102A883628E45D6A000DEFA9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 102A883528E45D6A000DEFA9 /* main.c */; };
+		102A883A28E45D78000DEFA9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		102A883B28E45D7C000DEFA9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		102A884328E461B2000DEFA9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 102A884228E461B2000DEFA9 /* main.c */; };
+		104F1B6128D5FE3E00011746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104F1B6028D5FE3E00011746 /* main.cpp */; };
+		104F1B6928D5FE5000011746 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		104F1B6B28D5FE5700011746 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		104F1B7528D5FF3C00011746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104F1B7428D5FF3C00011746 /* main.cpp */; };
+		104F1B7928D5FFEA00011746 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		104F1B7B28D6000700011746 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B7A28D6000700011746 /* libGLEW.2.2.0.dylib */; };
+		104F1B7D28D6001800011746 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B7C28D6001800011746 /* libglfw.3.3.dylib */; };
+		106752DE28D9E23200A5C9BC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 106752DD28D9E23200A5C9BC /* main.cpp */; };
+		106752E328D9E25A00A5C9BC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		106752E428D9E27100A5C9BC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		106752E528D9E27E00A5C9BC /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6C28D5FE8800011746 /* libGLEW.a */; };
+		106752ED28D9E2EC00A5C9BC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 106752EC28D9E2EC00A5C9BC /* main.cpp */; };
+		106752F128D9E2FB00A5C9BC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6828D5FE5000011746 /* OpenGL.framework */; };
+		106752F228D9E30100A5C9BC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6A28D5FE5700011746 /* GLUT.framework */; };
+		106752F528D9E31B00A5C9BC /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 104F1B6C28D5FE8800011746 /* libGLEW.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1003D68428DB209900CC41D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1003D69228DB2FA200CC41D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1003D69F28DC925C00CC41D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1003D6AC28DFDA3500CC41D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1003D6C428E3294600CC41D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1028A45A28FAA4E1002B658D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		102A882428E4561A000DEFA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		102A883128E45D6A000DEFA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		102A883E28E461B2000DEFA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		104F1B5B28D5FE3D00011746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		104F1B7028D5FF3C00011746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		106752D928D9E23200A5C9BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		106752E828D9E2EC00A5C9BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1003D68628DB209900CC41D3 /* Sierpinski3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sierpinski3D; sourceTree = BUILT_PRODUCTS_DIR; };
+		1003D68828DB209900CC41D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1003D69428DB2FA200CC41D3 /* 彩色立方体 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "彩色立方体"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1003D69628DB2FA200CC41D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1003D6A128DC925C00CC41D3 /* 直线绘制 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "直线绘制"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1003D6A328DC925D00CC41D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1003D6AE28DFDA3600CC41D3 /* 多边形绘制 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "多边形绘制"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1003D6B028DFDA3600CC41D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1003D6C628E3294600CC41D3 /* 彩色立方体2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "彩色立方体2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1003D6C828E3294600CC41D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1028A45C28FAA4E1002B658D /* demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		1028A45E28FAA4E2002B658D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		102A882628E4561A000DEFA9 /* 旋转彩色立方体 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "旋转彩色立方体"; sourceTree = BUILT_PRODUCTS_DIR; };
+		102A882828E4561B000DEFA9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		102A883328E45D6A000DEFA9 /* 基于投影的阴影 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "基于投影的阴影"; sourceTree = BUILT_PRODUCTS_DIR; };
+		102A883528E45D6A000DEFA9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		102A884028E461B2000DEFA9 /* sphere */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sphere; sourceTree = BUILT_PRODUCTS_DIR; };
+		102A884228E461B2000DEFA9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		104F1B5D28D5FE3E00011746 /* 计算机图形学 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "计算机图形学"; sourceTree = BUILT_PRODUCTS_DIR; };
+		104F1B6028D5FE3E00011746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		104F1B6828D5FE5000011746 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		104F1B6A28D5FE5700011746 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		104F1B6C28D5FE8800011746 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.a; sourceTree = "<group>"; };
+		104F1B7228D5FF3C00011746 /* 实验一_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "实验一_1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		104F1B7428D5FF3C00011746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		104F1B7A28D6000700011746 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		104F1B7C28D6001800011746 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		104F1B7E28D6006A00011746 /* 实验一_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "实验一_1.entitlements"; sourceTree = "<group>"; };
+		104F1B7F28D6007500011746 /* 计算机图形学.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "计算机图形学.entitlements"; sourceTree = "<group>"; };
+		106752DB28D9E23200A5C9BC /* test_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_1; sourceTree = BUILT_PRODUCTS_DIR; };
+		106752DD28D9E23200A5C9BC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		106752E228D9E24D00A5C9BC /* test_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_1.entitlements; sourceTree = "<group>"; };
+		106752EA28D9E2EC00A5C9BC /* Sierpinshi_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sierpinshi_1; sourceTree = BUILT_PRODUCTS_DIR; };
+		106752EC28D9E2EC00A5C9BC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		106752F328D9E31000A5C9BC /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../usr/local/Cellar/glew/2.2.0_1/lib; sourceTree = "<group>"; };
+		106752F628D9E32E00A5C9BC /* Sierpinshi_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sierpinshi_1.entitlements; sourceTree = "<group>"; };
+		106752F928D9E93500A5C9BC /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Volumes/SDL2/SDL2.framework; sourceTree = "<group>"; };
+		106752FD28D9EAA200A5C9BC /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.20/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		106752FF28D9EB8200A5C9BC /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../usr/local/Cellar/sdl2/2.0.20/lib/libSDL2.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1003D68328DB209900CC41D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D68E28DB20B000CC41D3 /* GLUT.framework in Frameworks */,
+				1003D68D28DB20A900CC41D3 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D69128DB2FA200CC41D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D69C28DB2FB600CC41D3 /* OpenGL.framework in Frameworks */,
+				1003D69B28DB2FB100CC41D3 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D69E28DC925C00CC41D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6A928DC926E00CC41D3 /* GLUT.framework in Frameworks */,
+				1003D6A828DC926900CC41D3 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D6AB28DFDA3500CC41D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6B628DFDA5B00CC41D3 /* GLUT.framework in Frameworks */,
+				1003D6B528DFDA5600CC41D3 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D6C328E3294600CC41D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6CE28E3295500CC41D3 /* GLUT.framework in Frameworks */,
+				1003D6CD28E3295100CC41D3 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1028A45928FAA4E1002B658D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1028A46428FAA4EF002B658D /* GLUT.framework in Frameworks */,
+				1028A46328FAA4EA002B658D /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A882328E4561A000DEFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A882E28E45633000DEFA9 /* GLUT.framework in Frameworks */,
+				102A882D28E4562C000DEFA9 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A883028E45D6A000DEFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A883B28E45D7C000DEFA9 /* GLUT.framework in Frameworks */,
+				102A883A28E45D78000DEFA9 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A883D28E461B2000DEFA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F1B5A28D5FE3D00011746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F1B6B28D5FE5700011746 /* GLUT.framework in Frameworks */,
+				104F1B6928D5FE5000011746 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F1B6F28D5FF3C00011746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F1B7D28D6001800011746 /* libglfw.3.3.dylib in Frameworks */,
+				104F1B7B28D6000700011746 /* libGLEW.2.2.0.dylib in Frameworks */,
+				104F1B7928D5FFEA00011746 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106752D828D9E23200A5C9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106752E528D9E27E00A5C9BC /* libGLEW.a in Frameworks */,
+				106752E428D9E27100A5C9BC /* GLUT.framework in Frameworks */,
+				106752E328D9E25A00A5C9BC /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106752E728D9E2EC00A5C9BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106752F528D9E31B00A5C9BC /* libGLEW.a in Frameworks */,
+				106752F228D9E30100A5C9BC /* GLUT.framework in Frameworks */,
+				106752F128D9E2FB00A5C9BC /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1003D68728DB209900CC41D3 /* Sierpinski3D */ = {
+			isa = PBXGroup;
+			children = (
+				1003D68828DB209900CC41D3 /* main.c */,
+			);
+			path = Sierpinski3D;
+			sourceTree = "<group>";
+		};
+		1003D69528DB2FA200CC41D3 /* 彩色立方体 */ = {
+			isa = PBXGroup;
+			children = (
+				1003D69628DB2FA200CC41D3 /* main.c */,
+			);
+			path = "彩色立方体";
+			sourceTree = "<group>";
+		};
+		1003D6A228DC925D00CC41D3 /* 直线绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				1003D6A328DC925D00CC41D3 /* main.c */,
+			);
+			path = "直线绘制";
+			sourceTree = "<group>";
+		};
+		1003D6AF28DFDA3600CC41D3 /* 多边形绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				1003D6B028DFDA3600CC41D3 /* main.c */,
+			);
+			path = "多边形绘制";
+			sourceTree = "<group>";
+		};
+		1003D6C728E3294600CC41D3 /* 彩色立方体2 */ = {
+			isa = PBXGroup;
+			children = (
+				1003D6C828E3294600CC41D3 /* main.c */,
+			);
+			path = "彩色立方体2";
+			sourceTree = "<group>";
+		};
+		1028A45D28FAA4E2002B658D /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				1028A45E28FAA4E2002B658D /* main.c */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		102A882728E4561B000DEFA9 /* 旋转彩色立方体 */ = {
+			isa = PBXGroup;
+			children = (
+				102A882828E4561B000DEFA9 /* main.c */,
+			);
+			path = "旋转彩色立方体";
+			sourceTree = "<group>";
+		};
+		102A883428E45D6A000DEFA9 /* 基于投影的阴影 */ = {
+			isa = PBXGroup;
+			children = (
+				102A883528E45D6A000DEFA9 /* main.c */,
+			);
+			path = "基于投影的阴影";
+			sourceTree = "<group>";
+		};
+		102A884128E461B2000DEFA9 /* sphere */ = {
+			isa = PBXGroup;
+			children = (
+				102A884228E461B2000DEFA9 /* main.c */,
+			);
+			path = sphere;
+			sourceTree = "<group>";
+		};
+		104F1B5428D5FE3D00011746 = {
+			isa = PBXGroup;
+			children = (
+				104F1B5F28D5FE3E00011746 /* 计算机图形学 */,
+				104F1B7328D5FF3C00011746 /* 实验一_1 */,
+				106752DC28D9E23200A5C9BC /* test_1 */,
+				106752EB28D9E2EC00A5C9BC /* Sierpinshi_1 */,
+				1003D68728DB209900CC41D3 /* Sierpinski3D */,
+				1003D69528DB2FA200CC41D3 /* 彩色立方体 */,
+				1003D6A228DC925D00CC41D3 /* 直线绘制 */,
+				1003D6AF28DFDA3600CC41D3 /* 多边形绘制 */,
+				1003D6C728E3294600CC41D3 /* 彩色立方体2 */,
+				102A882728E4561B000DEFA9 /* 旋转彩色立方体 */,
+				102A883428E45D6A000DEFA9 /* 基于投影的阴影 */,
+				102A884128E461B2000DEFA9 /* sphere */,
+				1028A45D28FAA4E2002B658D /* demo */,
+				104F1B5E28D5FE3E00011746 /* Products */,
+				104F1B6728D5FE5000011746 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		104F1B5E28D5FE3E00011746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104F1B5D28D5FE3E00011746 /* 计算机图形学 */,
+				104F1B7228D5FF3C00011746 /* 实验一_1 */,
+				106752DB28D9E23200A5C9BC /* test_1 */,
+				106752EA28D9E2EC00A5C9BC /* Sierpinshi_1 */,
+				1003D68628DB209900CC41D3 /* Sierpinski3D */,
+				1003D69428DB2FA200CC41D3 /* 彩色立方体 */,
+				1003D6A128DC925C00CC41D3 /* 直线绘制 */,
+				1003D6AE28DFDA3600CC41D3 /* 多边形绘制 */,
+				1003D6C628E3294600CC41D3 /* 彩色立方体2 */,
+				102A882628E4561A000DEFA9 /* 旋转彩色立方体 */,
+				102A883328E45D6A000DEFA9 /* 基于投影的阴影 */,
+				102A884028E461B2000DEFA9 /* sphere */,
+				1028A45C28FAA4E1002B658D /* demo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104F1B5F28D5FE3E00011746 /* 计算机图形学 */ = {
+			isa = PBXGroup;
+			children = (
+				104F1B7F28D6007500011746 /* 计算机图形学.entitlements */,
+				104F1B6028D5FE3E00011746 /* main.cpp */,
+			);
+			path = "计算机图形学";
+			sourceTree = "<group>";
+		};
+		104F1B6728D5FE5000011746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106752FF28D9EB8200A5C9BC /* libSDL2.a */,
+				106752FD28D9EAA200A5C9BC /* libSDL2-2.0.0.dylib */,
+				106752F928D9E93500A5C9BC /* SDL2.framework */,
+				106752F328D9E31000A5C9BC /* lib */,
+				104F1B7C28D6001800011746 /* libglfw.3.3.dylib */,
+				104F1B7A28D6000700011746 /* libGLEW.2.2.0.dylib */,
+				104F1B6C28D5FE8800011746 /* libGLEW.a */,
+				104F1B6A28D5FE5700011746 /* GLUT.framework */,
+				104F1B6828D5FE5000011746 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		104F1B7328D5FF3C00011746 /* 实验一_1 */ = {
+			isa = PBXGroup;
+			children = (
+				104F1B7E28D6006A00011746 /* 实验一_1.entitlements */,
+				104F1B7428D5FF3C00011746 /* main.cpp */,
+			);
+			path = "实验一_1";
+			sourceTree = "<group>";
+		};
+		106752DC28D9E23200A5C9BC /* test_1 */ = {
+			isa = PBXGroup;
+			children = (
+				106752E228D9E24D00A5C9BC /* test_1.entitlements */,
+				106752DD28D9E23200A5C9BC /* main.cpp */,
+			);
+			path = test_1;
+			sourceTree = "<group>";
+		};
+		106752EB28D9E2EC00A5C9BC /* Sierpinshi_1 */ = {
+			isa = PBXGroup;
+			children = (
+				106752F628D9E32E00A5C9BC /* Sierpinshi_1.entitlements */,
+				106752EC28D9E2EC00A5C9BC /* main.cpp */,
+			);
+			path = Sierpinshi_1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1003D68528DB209900CC41D3 /* Sierpinski3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1003D68A28DB209900CC41D3 /* Build configuration list for PBXNativeTarget "Sierpinski3D" */;
+			buildPhases = (
+				1003D68228DB209900CC41D3 /* Sources */,
+				1003D68328DB209900CC41D3 /* Frameworks */,
+				1003D68428DB209900CC41D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sierpinski3D;
+			productName = Sierpinski3D;
+			productReference = 1003D68628DB209900CC41D3 /* Sierpinski3D */;
+			productType = "com.apple.product-type.tool";
+		};
+		1003D69328DB2FA200CC41D3 /* 彩色立方体 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1003D69828DB2FA200CC41D3 /* Build configuration list for PBXNativeTarget "彩色立方体" */;
+			buildPhases = (
+				1003D69028DB2FA200CC41D3 /* Sources */,
+				1003D69128DB2FA200CC41D3 /* Frameworks */,
+				1003D69228DB2FA200CC41D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "彩色立方体";
+			productName = "彩色立方体";
+			productReference = 1003D69428DB2FA200CC41D3 /* 彩色立方体 */;
+			productType = "com.apple.product-type.tool";
+		};
+		1003D6A028DC925C00CC41D3 /* 直线绘制 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1003D6A728DC925D00CC41D3 /* Build configuration list for PBXNativeTarget "直线绘制" */;
+			buildPhases = (
+				1003D69D28DC925C00CC41D3 /* Sources */,
+				1003D69E28DC925C00CC41D3 /* Frameworks */,
+				1003D69F28DC925C00CC41D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "直线绘制";
+			productName = "直线绘制";
+			productReference = 1003D6A128DC925C00CC41D3 /* 直线绘制 */;
+			productType = "com.apple.product-type.tool";
+		};
+		1003D6AD28DFDA3500CC41D3 /* 多边形绘制 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1003D6B428DFDA3600CC41D3 /* Build configuration list for PBXNativeTarget "多边形绘制" */;
+			buildPhases = (
+				1003D6AA28DFDA3500CC41D3 /* Sources */,
+				1003D6AB28DFDA3500CC41D3 /* Frameworks */,
+				1003D6AC28DFDA3500CC41D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "多边形绘制";
+			productName = "多边形绘制";
+			productReference = 1003D6AE28DFDA3600CC41D3 /* 多边形绘制 */;
+			productType = "com.apple.product-type.tool";
+		};
+		1003D6C528E3294600CC41D3 /* 彩色立方体2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1003D6CC28E3294600CC41D3 /* Build configuration list for PBXNativeTarget "彩色立方体2" */;
+			buildPhases = (
+				1003D6C228E3294600CC41D3 /* Sources */,
+				1003D6C328E3294600CC41D3 /* Frameworks */,
+				1003D6C428E3294600CC41D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "彩色立方体2";
+			productName = "彩色立方体2";
+			productReference = 1003D6C628E3294600CC41D3 /* 彩色立方体2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		1028A45B28FAA4E1002B658D /* demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1028A46228FAA4E2002B658D /* Build configuration list for PBXNativeTarget "demo" */;
+			buildPhases = (
+				1028A45828FAA4E1002B658D /* Sources */,
+				1028A45928FAA4E1002B658D /* Frameworks */,
+				1028A45A28FAA4E1002B658D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demo;
+			productName = demo;
+			productReference = 1028A45C28FAA4E1002B658D /* demo */;
+			productType = "com.apple.product-type.tool";
+		};
+		102A882528E4561A000DEFA9 /* 旋转彩色立方体 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 102A882C28E4561B000DEFA9 /* Build configuration list for PBXNativeTarget "旋转彩色立方体" */;
+			buildPhases = (
+				102A882228E4561A000DEFA9 /* Sources */,
+				102A882328E4561A000DEFA9 /* Frameworks */,
+				102A882428E4561A000DEFA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "旋转彩色立方体";
+			productName = "旋转彩色立方体";
+			productReference = 102A882628E4561A000DEFA9 /* 旋转彩色立方体 */;
+			productType = "com.apple.product-type.tool";
+		};
+		102A883228E45D6A000DEFA9 /* 基于投影的阴影 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 102A883728E45D6A000DEFA9 /* Build configuration list for PBXNativeTarget "基于投影的阴影" */;
+			buildPhases = (
+				102A882F28E45D6A000DEFA9 /* Sources */,
+				102A883028E45D6A000DEFA9 /* Frameworks */,
+				102A883128E45D6A000DEFA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "基于投影的阴影";
+			productName = "基于投影的阴影";
+			productReference = 102A883328E45D6A000DEFA9 /* 基于投影的阴影 */;
+			productType = "com.apple.product-type.tool";
+		};
+		102A883F28E461B2000DEFA9 /* sphere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 102A884428E461B2000DEFA9 /* Build configuration list for PBXNativeTarget "sphere" */;
+			buildPhases = (
+				102A883C28E461B2000DEFA9 /* Sources */,
+				102A883D28E461B2000DEFA9 /* Frameworks */,
+				102A883E28E461B2000DEFA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sphere;
+			productName = sphere;
+			productReference = 102A884028E461B2000DEFA9 /* sphere */;
+			productType = "com.apple.product-type.tool";
+		};
+		104F1B5C28D5FE3D00011746 /* 计算机图形学 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104F1B6428D5FE3E00011746 /* Build configuration list for PBXNativeTarget "计算机图形学" */;
+			buildPhases = (
+				104F1B5928D5FE3D00011746 /* Sources */,
+				104F1B5A28D5FE3D00011746 /* Frameworks */,
+				104F1B5B28D5FE3D00011746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "计算机图形学";
+			productName = "计算机图形学";
+			productReference = 104F1B5D28D5FE3E00011746 /* 计算机图形学 */;
+			productType = "com.apple.product-type.tool";
+		};
+		104F1B7128D5FF3C00011746 /* 实验一_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104F1B7628D5FF3D00011746 /* Build configuration list for PBXNativeTarget "实验一_1" */;
+			buildPhases = (
+				104F1B6E28D5FF3C00011746 /* Sources */,
+				104F1B6F28D5FF3C00011746 /* Frameworks */,
+				104F1B7028D5FF3C00011746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "实验一_1";
+			productName = "实验一_1";
+			productReference = 104F1B7228D5FF3C00011746 /* 实验一_1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		106752DA28D9E23200A5C9BC /* test_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106752E128D9E23200A5C9BC /* Build configuration list for PBXNativeTarget "test_1" */;
+			buildPhases = (
+				106752D728D9E23200A5C9BC /* Sources */,
+				106752D828D9E23200A5C9BC /* Frameworks */,
+				106752D928D9E23200A5C9BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_1;
+			productName = test_1;
+			productReference = 106752DB28D9E23200A5C9BC /* test_1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		106752E928D9E2EC00A5C9BC /* Sierpinshi_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106752EE28D9E2EC00A5C9BC /* Build configuration list for PBXNativeTarget "Sierpinshi_1" */;
+			buildPhases = (
+				106752E628D9E2EC00A5C9BC /* Sources */,
+				106752E728D9E2EC00A5C9BC /* Frameworks */,
+				106752E828D9E2EC00A5C9BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sierpinshi_1;
+			productName = Sierpinshi_1;
+			productReference = 106752EA28D9E2EC00A5C9BC /* Sierpinshi_1 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104F1B5528D5FE3D00011746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1003D68528DB209900CC41D3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1003D69328DB2FA200CC41D3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1003D6A028DC925C00CC41D3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1003D6AD28DFDA3500CC41D3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1003D6C528E3294600CC41D3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					1028A45B28FAA4E1002B658D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					102A882528E4561A000DEFA9 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					102A883228E45D6A000DEFA9 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					102A883F28E461B2000DEFA9 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					104F1B5C28D5FE3D00011746 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					104F1B7128D5FF3C00011746 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					106752DA28D9E23200A5C9BC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					106752E928D9E2EC00A5C9BC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 104F1B5828D5FE3D00011746 /* Build configuration list for PBXProject "计算机图形学" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104F1B5428D5FE3D00011746;
+			productRefGroup = 104F1B5E28D5FE3E00011746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104F1B5C28D5FE3D00011746 /* 计算机图形学 */,
+				104F1B7128D5FF3C00011746 /* 实验一_1 */,
+				106752DA28D9E23200A5C9BC /* test_1 */,
+				106752E928D9E2EC00A5C9BC /* Sierpinshi_1 */,
+				1003D68528DB209900CC41D3 /* Sierpinski3D */,
+				1003D69328DB2FA200CC41D3 /* 彩色立方体 */,
+				1003D6A028DC925C00CC41D3 /* 直线绘制 */,
+				1003D6AD28DFDA3500CC41D3 /* 多边形绘制 */,
+				1003D6C528E3294600CC41D3 /* 彩色立方体2 */,
+				102A882528E4561A000DEFA9 /* 旋转彩色立方体 */,
+				102A883228E45D6A000DEFA9 /* 基于投影的阴影 */,
+				102A883F28E461B2000DEFA9 /* sphere */,
+				1028A45B28FAA4E1002B658D /* demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1003D68228DB209900CC41D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D68928DB209900CC41D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D69028DB2FA200CC41D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D69728DB2FA200CC41D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D69D28DC925C00CC41D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6A428DC925D00CC41D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D6AA28DFDA3500CC41D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6B128DFDA3600CC41D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1003D6C228E3294600CC41D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1003D6C928E3294600CC41D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1028A45828FAA4E1002B658D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1028A45F28FAA4E2002B658D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A882228E4561A000DEFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A882928E4561B000DEFA9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A882F28E45D6A000DEFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A883628E45D6A000DEFA9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		102A883C28E461B2000DEFA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102A884328E461B2000DEFA9 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F1B5928D5FE3D00011746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F1B6128D5FE3E00011746 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F1B6E28D5FF3C00011746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F1B7528D5FF3C00011746 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106752D728D9E23200A5C9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106752DE28D9E23200A5C9BC /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106752E628D9E2EC00A5C9BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106752ED28D9E2EC00A5C9BC /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1003D68B28DB209900CC41D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1003D68C28DB209900CC41D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1003D69928DB2FA200CC41D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1003D69A28DB2FA200CC41D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1003D6A528DC925D00CC41D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1003D6A628DC925D00CC41D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1003D6B228DFDA3600CC41D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1003D6B328DFDA3600CC41D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1003D6CA28E3294600CC41D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1003D6CB28E3294600CC41D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1028A46028FAA4E2002B658D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1028A46128FAA4E2002B658D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		102A882A28E4561B000DEFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		102A882B28E4561B000DEFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		102A883828E45D6A000DEFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		102A883928E45D6A000DEFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		102A884528E461B2000DEFA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		102A884628E461B2000DEFA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		104F1B6228D5FE3E00011746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		104F1B6328D5FE3E00011746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		104F1B6528D5FE3E00011746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "计算机图形学/计算机图形学.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glew/2.2.0_1/include,
+					/usr/local/Cellar/glew/2.2.0_1/include/GL,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		104F1B6628D5FE3E00011746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "计算机图形学/计算机图形学.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glew/2.2.0_1/include,
+					/usr/local/Cellar/glew/2.2.0_1/include/GL,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		104F1B7728D5FF3D00011746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "实验一_1/实验一_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.6/include,
+					/usr/local/Cellar/glew/2.2.0_1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+					/usr/local/Cellar/glfw/3.3.6/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		104F1B7828D5FF3D00011746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "实验一_1/实验一_1.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.6/include,
+					/usr/local/Cellar/glew/2.2.0_1/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+					/usr/local/Cellar/glfw/3.3.6/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		106752DF28D9E23200A5C9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = test_1/test_1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		106752E028D9E23200A5C9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = test_1/test_1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		106752EF28D9E2EC00A5C9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sierpinshi_1/Sierpinshi_1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sdl2/2.0.20/lib,
+					/usr/local/Cellar/sdl2/2.0.20/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+					/usr/local/Cellar/sdl2/2.0.20/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		106752F028D9E2EC00A5C9BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sierpinshi_1/Sierpinshi_1.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2XTYLLRK6;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sdl2/2.0.20/lib,
+					/usr/local/Cellar/sdl2/2.0.20/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+					/usr/local/Cellar/sdl2/2.0.20/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1003D68A28DB209900CC41D3 /* Build configuration list for PBXNativeTarget "Sierpinski3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1003D68B28DB209900CC41D3 /* Debug */,
+				1003D68C28DB209900CC41D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1003D69828DB2FA200CC41D3 /* Build configuration list for PBXNativeTarget "彩色立方体" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1003D69928DB2FA200CC41D3 /* Debug */,
+				1003D69A28DB2FA200CC41D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1003D6A728DC925D00CC41D3 /* Build configuration list for PBXNativeTarget "直线绘制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1003D6A528DC925D00CC41D3 /* Debug */,
+				1003D6A628DC925D00CC41D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1003D6B428DFDA3600CC41D3 /* Build configuration list for PBXNativeTarget "多边形绘制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1003D6B228DFDA3600CC41D3 /* Debug */,
+				1003D6B328DFDA3600CC41D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1003D6CC28E3294600CC41D3 /* Build configuration list for PBXNativeTarget "彩色立方体2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1003D6CA28E3294600CC41D3 /* Debug */,
+				1003D6CB28E3294600CC41D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1028A46228FAA4E2002B658D /* Build configuration list for PBXNativeTarget "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1028A46028FAA4E2002B658D /* Debug */,
+				1028A46128FAA4E2002B658D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		102A882C28E4561B000DEFA9 /* Build configuration list for PBXNativeTarget "旋转彩色立方体" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102A882A28E4561B000DEFA9 /* Debug */,
+				102A882B28E4561B000DEFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		102A883728E45D6A000DEFA9 /* Build configuration list for PBXNativeTarget "基于投影的阴影" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102A883828E45D6A000DEFA9 /* Debug */,
+				102A883928E45D6A000DEFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		102A884428E461B2000DEFA9 /* Build configuration list for PBXNativeTarget "sphere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102A884528E461B2000DEFA9 /* Debug */,
+				102A884628E461B2000DEFA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104F1B5828D5FE3D00011746 /* Build configuration list for PBXProject "计算机图形学" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F1B6228D5FE3E00011746 /* Debug */,
+				104F1B6328D5FE3E00011746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104F1B6428D5FE3E00011746 /* Build configuration list for PBXNativeTarget "计算机图形学" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F1B6528D5FE3E00011746 /* Debug */,
+				104F1B6628D5FE3E00011746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104F1B7628D5FF3D00011746 /* Build configuration list for PBXNativeTarget "实验一_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F1B7728D5FF3D00011746 /* Debug */,
+				104F1B7828D5FF3D00011746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106752E128D9E23200A5C9BC /* Build configuration list for PBXNativeTarget "test_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106752DF28D9E23200A5C9BC /* Debug */,
+				106752E028D9E23200A5C9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106752EE28D9E2EC00A5C9BC /* Build configuration list for PBXNativeTarget "Sierpinshi_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106752EF28D9E2EC00A5C9BC /* Debug */,
+				106752F028D9E2EC00A5C9BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104F1B5528D5FE3D00011746 /* Project object */;
+}

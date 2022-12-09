@@ -1,0 +1,143 @@
+// 实验三虚拟内存的检测.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <windows.h>
+#include <iostream>
+#include <shlwapi.h>
+#include <iomanip>
+#pragma comment(lib, "Shlwapi.lib")
+
+// 显示内存保护的方法。
+// 保护标记指示：允许应用程序对内存进行访问的类型以及操作系统强制访问的类型
+inline bool TestSet(DWORD dwTarget, DWORD dwMask)
+{
+    return ((dwTarget &dwMask) == dwMask) ;
+}
+
+//宏定义一个函数
+//TestSet为内联函数
+# define SHOWMASK(dwTarget, type) \
+if (TestSet(dwTarget, PAGE_##type) ) \
+    {std :: cout << ", " << #type; }
+
+void ShowProtection(DWORD dwTarget)
+{
+    SHOWMASK(dwTarget, READONLY) ;
+    SHOWMASK(dwTarget, GUARD) ;
+    SHOWMASK(dwTarget, NOCACHE) ;
+    SHOWMASK(dwTarget, READWRITE) ;
+    SHOWMASK(dwTarget, WRITECOPY) ;
+    SHOWMASK(dwTarget, EXECUTE) ;
+    SHOWMASK(dwTarget, EXECUTE_READ) ;
+    SHOWMASK(dwTarget, EXECUTE_READWRITE) ;
+    SHOWMASK(dwTarget, EXECUTE_WRITECOPY) ;
+    SHOWMASK(dwTarget, NOACCESS) ;
+}
+
+// 遍历整个虚拟内存,并显示虚拟内存属性
+void WalkVM(HANDLE hProcess)
+{
+    // 首先，获得系统信息
+    SYSTEM_INFO si;
+    :: ZeroMemory(&si, sizeof(si) ) ;
+    :: GetSystemInfo(&si) ;
+
+    // 分配要存放信息的缓冲区
+    MEMORY_BASIC_INFORMATION mbi;
+    :: ZeroMemory(&mbi, sizeof(mbi) ) ;
+
+    // 循环检查整个进程虚拟地址空间
+    LPCVOID pBlock = (LPVOID) si.lpMinimumApplicationAddress;
+    while (pBlock < si.lpMaximumApplicationAddress)
+    {
+        // 获得下一个虚拟内存块的信息
+        if (:: VirtualQueryEx(
+            hProcess,			    // 相关的进程
+            pBlock,                         // 虚拟内存块的开始位置
+			&mbi,               // 存放虚拟内存块信息的缓冲区
+            sizeof(mbi))==sizeof(mbi) )	    // 大小的确认
+        {
+            // 计算块的结尾及其大小
+            LPCVOID pEnd = (PBYTE) pBlock + mbi.RegionSize;
+			TCHAR szSize[MAX_PATH];
+            :: StrFormatByteSize(mbi.RegionSize, szSize, MAX_PATH) ;
+
+            // 显示块地址和大小
+            std :: cout.fill ('0') ;
+            std :: cout
+                << std :: hex << std :: setw(8) << (DWORD) pBlock
+                << "-"
+                << std :: hex << std :: setw(8) << (DWORD) pEnd
+                << (:: strlen(szSize)==7? " (" : " (") << szSize
+                << ") " ;
+
+            // 显示块的状态
+            switch(mbi.State)
+            {
+                case MEM_COMMIT :
+					std :: cout << "Committed" ;
+					break;
+                case MEM_FREE :
+					std :: cout << "Free" ;
+					break;
+                case MEM_RESERVE :
+					std :: cout << "Reserved" ;
+					break;
+            }
+
+            //重新调整保护方式
+			if(mbi.Protect==0 && mbi.State!=MEM_FREE)
+            {
+                mbi.Protect=PAGE_READONLY;
+            }
+			// 显示保护方式
+			ShowProtection(mbi.Protect);
+
+            // 显示类型
+            switch(mbi.Type){
+                case MEM_IMAGE :    //可执行文件*.dll，*.exe等
+					std :: cout << ", Image" ;
+					break;
+				case MEM_MAPPED:    //用CreateFileMapping（）创建的内存映射文件
+					std :: cout << ", Mapped";
+					break;
+                case MEM_PRIVATE :  //不被共享，包括堆和栈等
+					std :: cout << ", Private" ;
+					break;
+			}
+
+            // 检验可执行的映像
+            TCHAR szFilename [MAX_PATH] ;
+            if (:: GetModuleFileName (
+                (HMODULE) pBlock,		// 一个模块的句柄。可以是一个DLL模块，
+				                        //或者是一个应用程序的实例句柄。
+                                        //如果该参数为NULL，该函数返回该应用程序全路径。
+				szFilename,             // 文件名称
+				MAX_PATH)>0)            // 实际使用的缓冲区大小
+            {
+                // 除去文件名的路径并将文件名显示出来
+                :: PathStripPath(szFilename) ;
+                std :: cout << ", Module: " << szFilename;
+			}
+
+            std :: cout << std :: endl;
+			
+			// 移动块指针以获得下一个块
+            pBlock = pEnd;
+        }
+    }
+}
+
+
+int main(int argc, char* argv[])
+{
+	// 遍历当前进程的虚拟内存
+	::WalkVM(::GetCurrentProcess());
+	return 0;
+}
+
+/*
+思考题：
+1、进程的虚拟地址空间除了和物理内存有映射关系，还和哪些文件有映射关系？
+*/

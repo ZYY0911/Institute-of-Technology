@@ -1,0 +1,147 @@
+// 实验二同步.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+# include <windows.h>
+# include <iostream>
+
+// 事件名称
+static LPCTSTR g_szContinueEvent ="event.Continue";
+
+// 创建了一个进程的副本，以子进程模式 (由命令行指定) 工作
+BOOL CreateChild()
+{
+	// 提取当前可执行文件的文件名
+	TCHAR szFilename[MAX_PATH];
+    ::GetModuleFileName(NULL, szFilename, MAX_PATH) ;
+    
+	// 格式化用于子进程的命令行，指明它是一个EXE文件和子进程
+    TCHAR szCmdLine[MAX_PATH];
+    ::sprintf(szCmdLine, "\"%s\" child" , szFilename) ;
+	std::cout << szCmdLine << std::endl;
+	
+    // 子进程的启动信息结构
+    STARTUPINFO si;
+    ::ZeroMemory(reinterpret_cast<void*>(&si), sizeof(si)) ;
+    si.cb = sizeof(si);		// 本结构的大小
+
+    // 返回的子进程的进程信息结构
+    PROCESS_INFORMATION pi;
+
+    // 使用同一可执行文件和告诉它是一个子进程的命令行创建进程
+    BOOL bCreateOK = ::CreateProcess(
+		szFilename,			// 生成的可执行文件名
+		szCmdLine,        	// 命令行参数
+        NULL,				// 子进程句柄的安全性
+        NULL,				// 子线程句柄的安全性
+        FALSE,				// 不继承句柄
+        CREATE_NEW_CONSOLE,	// 特殊的创建标志
+        NULL,				// 新环境
+        NULL,				// 当前目录
+        &si,				// 启动信息结构
+        &pi ) ;				// 返回的进程信息结构
+
+    // 释放对子进程的引用
+    if (bCreateOK)
+	{
+        :: CloseHandle(pi.hProcess);
+        :: CloseHandle(pi.hThread);
+    }
+	return(bCreateOK) ;
+}
+
+// 创建一个事件和一个子进程，然后等待子进程在返回前向事件发出信号
+void WaitForChild()
+{
+    // 为子进程创建一个事件对象
+    HANDLE hEventContinue = ::CreateEvent(
+        NULL,				// 缺省的安全性，子进程将具有访问权限
+        TRUE,				// 是否是手工复位事件
+        FALSE,			    // 事件的初始值是非接受信号状态
+        g_szContinueEvent);	// 事件名称，用于父子进程间。
+    if (hEventContinue != NULL)
+	{
+		std :: cout << "event created " << std :: endl;
+		// 创建子进程
+        if (::CreateChild())
+        {
+			std::cout << " chlid created" << std::endl;
+
+            // 等待，直到子进程发出信号
+		    std::cout << "Parent waiting on child." << std::endl;
+		        
+		    while(1)
+		    {
+                ::WaitForSingleObject(hEventContinue, INFINITE);
+              	
+			    std::cout << "parent received the event signaling from child"
+					       << std::endl;
+			    //实际应用中可在此进行事件处理。
+					    
+			    :: Sleep(2000);
+			}
+        }
+
+        // 清除句柄
+        ::CloseHandle(hEventContinue);
+        hEventContinue=INVALID_HANDLE_VALUE;
+    }
+}
+
+// 以下函数在子进程中被调用，其功能只是向父进程发出终止信号
+void SignalParent()
+{   
+	std::cout << "child process begining......" << std :: endl;
+
+	// 尝试打开句柄
+    HANDLE hEventContinue = ::OpenEvent(
+        EVENT_MODIFY_STATE,			// 所要求的最小访问权限
+        FALSE,						// 不是可继承的句柄
+        g_szContinueEvent);			// 事件名称
+    if(hEventContinue != NULL)
+	{
+	  :: Sleep(5000);
+			
+	  //子进程发送事件，通知父进程。
+      :: SetEvent(hEventContinue);
+
+	  std :: cout << "event signaled" << std :: endl;
+				
+	  getchar();
+	  //子进程获取到输入字符后，将事件设置为无信号状态。
+	  ResetEvent(hEventContinue);
+			
+	  getchar();
+    }
+
+    // 清除句柄
+    :: CloseHandle(hEventContinue) ;
+    hEventContinue = INVALID_HANDLE_VALUE;
+}
+
+int main(int argc, char* argv[])
+{
+    // 检查是父进程还是子进程。
+    if (argc>1 && :: strcmp(argv[1] , "child" )== 0)
+    {   
+		// 为子进程，向父进程创建的事件发出信号。        
+        :: SignalParent(); 
+        std :: cout << "Child released." << std :: endl;   
+    }
+    else
+    {
+		// 为父进程，创建一个事件并等待子进程发出信号。
+        :: WaitForChild();
+        std :: cout << "Parent released." << std :: endl;       
+    }
+    return 0;
+}
+
+/*
+思考题：
+1、本实验中事件是如何在父子进程间共享的？
+2、Windows的哪个API对应事件的P操作？哪个API对应事件的V操作？
+3、事件发送和获取的调用位置有什么特点？
+4、本实验中是哪个进程向哪个进程发送事件的？
+5、Windows的自动复位事件和人工复位事件有什么区别？
+6、Windows旳事件是计数的吗？
+*/

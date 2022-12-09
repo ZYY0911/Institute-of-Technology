@@ -1,0 +1,10 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "实验二互斥", "实验二互斥.dsp", "{7310BDA0-D2B5-40E1-838B-A6A9C5BF188F}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,180 @@
+/* 工业设计样式 */
+.jysj{
+    width: 100%;
+    height: 500px;
+    background: #edf2f1;
+    background-image: url(../img/design1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+}
+.jysj .jysj-center{
+    width: 1300px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 1px;
+    position: relative;
+}
+.center-c{
+    width: 100%;
+    margin-bottom: 160px;
+    margin-top: 60px;
+}
+.jysj .jysj-center .lc{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 45px;
+    width: 1200px;
+    height: 220px;
+    background: #fff;
+}
+.center-c .pone{
+    font-family: digital-1;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: rgba(51,51,51,.996);
+    margin-bottom: 50px;
+}
+.center-t{
+    width: 100px;
+    height: 3px;
+    background: #1e50ae;
+    border-radius: 5px;
+    
+    margin-bottom: 30px;
+}
+.center-c .ptwo{
+    width: 1007px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #898989;
+}
+.jysj .jysj-center .lc .lcitbox{
+    width: 200px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .jysj .jysj-center .lc .lcit{
+    width: 171px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: digital-1;
+    font-weight: 400;
+    font-style: normal;
+    color: #666;
+}
+.jysj .jysj-center .lc img{
+    width: 90px;
+}
+.jysj .jysj-center .lc .lcit-wd{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.jysj .jysj-center .lc .lcimg{
+    width: 50px;
+    height: 4px;
+    position: relative;
+    top: -20px;
+}
+.jysj .jysj-center .lc .lcimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 仿真设计样式开始 */
+.simulation {
+    margin-top: 50px;
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    
+}
+.simulation .simulation-title{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.simulation-title span{
+    font-weight: 400;
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 70px;
+}
+.simulation .simulation-title .simulation-t{
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.simulation .simulation-title .fys{
+    width: 68px;
+    height: 2px;
+    background: #1e50ae;
+    margin-bottom: 28px;
+}
+.simulation .simulation-title .simulation-ms{
+    width: 1007px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #898989;
+}
+.simulation-item {
+    width: 20%;
+    height: 320px;
+    margin-right: 80px;
+    background: #fff;
+    cursor: pointer;
+}
+.simulation-item img {
+    width: 100%;
+}
+.simulation-ti span {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 24px;
+    color: #333;
+}
+.simulation-text span {
+    color: #606266;
+    /* padding: 15px; */
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+.simulation-text {
+    margin: 15px;
+}
+
+/* hover */
+.simulation-item:hover {
+    box-shadow: 0 10px 30px 0 rgb(0, 0 ,0 , .3);
+}
+.simulation-allitems {
+    display: flex;
+}

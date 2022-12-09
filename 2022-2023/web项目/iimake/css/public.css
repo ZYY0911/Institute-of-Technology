@@ -1,0 +1,123 @@
+/*在线讲坛*/
+.public {
+    width: 1300px;
+    margin: 50px auto;
+    margin-bottom: 60px;
+    font-size: 32px!important;
+    font-family: digital-1;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+}
+.public:after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #1e50ae;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+.public>span{
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #333;
+    cursor: pointer;
+}
+.pulpit {
+    width: 1300px;
+    margin: 30px auto;
+    display: flex;
+}
+.pulpit-item {
+    width: 248px;
+    margin-left: 15px;
+    box-shadow: 0 0 9px 3px #fbfbfb;
+    background-color: #fff;
+}
+.pulpit-item:hover {
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+.pulpit-item:first-child {
+    margin-left: 0px;
+}
+.pulpit-img img {
+    width: 100%;
+    height: 140px;
+    cursor: pointer;
+}
+.pulpit-item p {
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    padding-bottom: 0;
+    line-height: 28px;
+}
+.pulpit-item .ren {
+   text-align: right;
+    font-size: 14px;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #999;
+}
+/*创客赛事*/
+.creator {
+    width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.creator-item {
+    box-shadow: 0 0 9px 3px #fbfbfb;
+    background-color: #fff;
+    margin-left: 50px;
+    width: 400px;
+    height: 470px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.creator-item:hover {
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+ .creator-item:nth-child(3n+1) {
+    margin-left: 0px;
+} 
+.creator-item-img {
+    margin-bottom: 15px
+}
+
+.creator-item-img img {
+    width: 100%;
+    height: 265px;
+}
+
+/* 标题 */
+.creator-item p{
+    padding: 0 20px;
+    color: #333;
+    font-size: 18px;
+    height: 63px;
+}
+/* 简介 */
+.creator-item .two {
+    font-size: 16px;
+    color: rgba(0,0,0,.6);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 65px;
+    line-height: 22px;
+}
+
+/* 新闻 */
+.creator-item .fot {
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(0,0,0,.4);
+}

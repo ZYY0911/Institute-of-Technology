@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>慧心智造官网</title>
+	<link rel="shortcut icon" href="img/favicon.ico" />
+
+	<link rel="stylesheet" href="css/common/common.css" />
+	<link rel="stylesheet" href="css/common/header.css" />
+	<link rel="stylesheet" href="css/common/sidebar.css" />
+	<link rel="stylesheet" href="css/common/banner.css" />
+
+	<link rel="stylesheet" href="css/Swiper/swiper.css" />
+
+	<link rel="stylesheet" href="css/public.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+	<style>
+		.logo p {
+			color: white;
+			display: inline-block;
+			line-height: 65px;
+			font-weight: normal;
+			font-size: 32px;
+		}
+
+		#video {
+			width: 100%;
+		}
+
+		.modal-content {
+			top: 100px;
+		}
+
+		.vid-a {
+			font-size: 16px;
+			position: absolute;
+			right: 0;
+			top: 10px;
+			color: #333;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 头部内容开始 -->
+	<div class="header clearfix">
+		<div class="h-container">
+			<!-- 头部左侧logo -->
+			<div class="logo">
+				<p>慧心智造</p>
+				<span>
+					中国站
+					<i class="">></i>
+				</span>
+			</div>
+			<!-- 头部右侧导航栏 -->
+			<div class="nav">
+				<!-- 右侧导航栏左部 -->
+				<div class="nav-left">
+					<a href="index.html">首页</a>
+					<a href="design.html">设计服务</a>
+					<a href="teamwork.html">协同制作</a>
+					<a href="service.html">工业服务</a>
+					<a href="public.html" id="active">公共平台</a>
+				</div>
+				<!-- 导航栏右侧 登录注册按钮 -->
+				<div class="nav-right nav-denglu">
+					<a href="#">免费注册</a>
+					<a href="./login.html">登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部内容完成 -->
+
+	<!-- 轮播图开始 -->
+	<div class="banner clearfix">
+		<div class="swiper" id="swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div id="banner-text">
+						<h1>筑梦计划</h1>
+						<p>
+							针对小批量、多品种、定制化需求，提供设计、加工、组装、检测、物流、一站式服务
+						</p>
+						<a href="">了解更多</a>
+					</div>
+					<img src="img/sy111.png" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<div id="banner-text">
+						<h1>智能工厂解决方案</h1>
+						<p>
+							凭借独特的技术组合和全面的制造专业经验，开启你的智能工厂旅程
+						</p>
+						<a href="">了解更多</a>
+					</div>
+					<img src="img/sy222.png" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<div id="banner-text">
+						<h1>筑梦计划-海量正版</h1>
+						<p>CAD、CAE、CAM海量正版软件，等你来云体验， 学生免费使用</p>
+						<a href="">了解更多</a>
+					</div>
+					<img src="img/sy333.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 轮播图结束 -->
+
+	<!-- 在线讲坛 -->
+	<div class="public">
+		在线讲坛
+		<a id="1" class="vid-a" href="#">更多>></a>
+	</div>
+	<div class="pulpit">
+		<div class="pulpit-item" data-toggle="modal" data-target="#myModal">
+			<div class="pulpit-img">
+				<img src="img/public6.png" />
+			</div>
+			<p>从设计加工到仿真验证的一体化模具制造方案</p>
+			<p class="ren">主讲人：李望</p>
+		</div>
+		<div class="pulpit-item" data-toggle="modal" data-target="#myModal">
+			<div class="pulpit-img">
+				<img src="img/public7.jpg" />
+			</div>
+			<p>海克斯康智能制造为航空发动机提供动力</p>
+			<p class="ren">主讲人：卜文明</p>
+		</div>
+
+		<div class="pulpit-item" data-toggle="modal" data-target="#myModal">
+			<div class="pulpit-img">
+				<img src="img/public5.jpeg" />
+			</div>
+			<p>利用智能检测技术助力企业实现智能制造</p>
+			<p class="ren">主讲人：孟书广</p>
+		</div>
+
+		<div class="pulpit-item" data-toggle="modal" data-target="#myModal">
+			<div class="pulpit-img">
+				<img src="img/public4.png" />
+			</div>
+			<p>MSC软件助力仿真与制造实现闭环</p>
+			<p class="ren">主讲人：徐明</p>
+		</div>
+		<div class="pulpit-item" data-toggle="modal" data-target="#myModal">
+			<div class="pulpit-img">
+				<img src="img/public8.png" />
+			</div>
+			<p>打造敏捷、高效、高质量的生产制造系统</p>
+			<p class="ren">主讲人：封善斋</p>
+		</div>
+
+	</div>1
+	<!-- 创客赛事 -->
+	<div class="public">
+		创客赛事
+		<a id="2" class="vid-a" href="#">更多>></a>
+	</div>
+	<div class="creator">
+		<div class="creator-item">
+			<div class="creator-item-img">
+				<img src="img/public1.jpeg" />
+			</div>
+			<p>计量界盛会“2020·海克斯康杯”测量工程师比武大赛圆满收官</p>
+			<p class="two">
+				四海量友聚青岛，千军云腾耀八方。2020年12月5日-6日，“海克斯康杯”测量工程师比武大赛总决赛于青岛举行，来自中航工业哈尔滨飞机工业集团
+			</p>
+			<p class="fot">
+				<span>新闻</span>
+				<span>2020-12-14</span>
+			</p>
+		</div>
+
+		<div class="creator-item">
+			<div class="creator-item-img">
+				<img src="img/public3.png" />
+			</div>
+			<p>
+				设计新高度，大奖就是你！天河智造举办“天河PCCAD三维创新创意设计大赛”
+			</p>
+			<p class="two">
+				设计新高度，大奖就是你！天河智造举办“天河PCCAD三维创新创意设计大赛”
+				天河智造（北京）科技股份有限公司为答谢所有天河PCCAD的用户朋友们，特主办“天河PCCAD三维创新创意设计大赛”。通过设计师们的参与展示，增强天河与创新设计者之间的良好互动与沟通。
+			</p>
+			<p class="fot">
+				<span>新闻</span>
+				<span>2020-12-14</span>
+			</p>
+		</div>
+
+		<div class="creator-item">
+			<div class="creator-item-img">
+				<img src="img/public2.jpeg" />
+			</div>
+			<p>
+				【聚焦海克斯康PPM】外高桥造船首届飞鹰杯Smart 3D技术比武大赛圆满落幕
+			</p>
+			<p class="two">
+				由上海外高桥造船有限公司主办，海克斯康PPM协办的“第一届飞鹰杯Smart
+				3D技术比武大赛”于2019年12月27日圆满落幕并举行了盛大的颁奖典礼。
+			</p>
+			<p class="fot">
+				<span>新闻</span>
+				<span>2020-12-14</span>
+			</p>
+		</div>
+	</div>
+
+	<!-- 右侧固定侧边栏 -->
+	<div class="toTop">
+		<!-- 咨询 -->
+		<div class="consulting">
+			<span>在线咨询</span>
+		</div>
+		<!-- 电话 -->
+		<div class="phone">
+			<span>拨打电话</span>
+			<div class="telShow">
+				<h6>客服热线</h6>
+				<p>400-400-0001</p>
+				<div>工作日:9:00-18:00</div>
+			</div>
+		</div>
+		<!-- 返回顶部 -->
+		<div class="btop">
+			<span class="iconfont icon-xiangshangjiantou"> ↑ </span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var myDialog = document.querySelectorAll(".pulpit-img img");
+		for (var i = 0; i < myDialog.length; i++) {
+			myDialog[i].onclick = function () {
+				window.location.href = "video.html";
+			}
+		}
+	</script>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/sidebar.js"></script>
+
+	<script src="js/Swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/swiper.js"></script>
+</body>
+
+</html>

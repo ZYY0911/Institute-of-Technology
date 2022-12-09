@@ -1,0 +1,54 @@
+// 进程间共享内存写.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+# include <windows.h>
+# include <iostream>
+
+int main(int argc, char* argv[])
+{
+	HANDLE lhShareMemory;  
+	 char* lpBuffer = NULL;  
+	  
+	 //创建一个物理文件无关的内存映射对象
+	 lhShareMemory = CreateFileMapping(HANDLE(0xFFFFFFFF), NULL, PAGE_READWRITE,  
+	  0, 10, "mySharedMemory");  
+	   
+	 if (NULL == lhShareMemory)  
+	 {  
+	  if (ERROR_ALREADY_EXISTS == GetLastError())  
+	  {  
+	  std:: cout << "Already exists!"<<std:: endl;
+	  }  
+	  else  
+	  {  
+	   std::cout << "Create Sheared Memory unsuccessfully!"<< std::endl; 
+	  }  
+	  return 0;  
+	 }  
+	   
+	 lpBuffer = (char*)MapViewOfFile(lhShareMemory, FILE_MAP_WRITE, 0, 0, 10);  
+	 if (NULL == lpBuffer)  
+	 {  
+	  std::cout << "Get Share memory unsuccessfully!"<< std::endl;  
+	  return 0;  
+	 }  
+   
+     strcpy(lpBuffer, "hello");  
+	 std::cout << "进程通信：采用共享内存" << std::endl; 
+	 std::cout << "写进程" << std::endl;
+	 std::cout << "写入数据:"<< std::endl<<lpBuffer << std::endl;  
+	 Sleep(100000);  
+	 UnmapViewOfFile(lpBuffer);  
+	 return 0;
+
+
+}
+
+
+
+//思考题:
+
+// 1、Windows下的进程间共享内存是利用什么机制实现的？
+// 2、对于读写进程，物理内存是什么时候分配的？
+// 3、读写进程之间的同步和互斥在共享内存机制中已经存在了，还是需要用户自己来实现？

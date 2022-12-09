@@ -1,0 +1,121 @@
+// 实验二互斥.cpp : Defines the entry point for the console application.
+
+
+#include "stdafx.h"
+# include <windows.h>
+# include <iostream>
+
+HANDLE hThreadInc;
+HANDLE hThreadDec;
+HANDLE hMutexValue;
+
+int Value[2];   //加法线程和减法线程操作的共享变量。
+
+	DWORD WINAPI IncThreadProc(LPVOID lpParam)
+	{
+		int Count;
+
+		Count=(int)lpParam;
+
+		// 循环，直到所有的访问都结束为止
+		while (1)
+		{
+			// 等待访问数值
+			:: WaitForSingleObject(hMutexValue, INFINITE);
+
+			// 改变并显示该值
+			Value[0]+=Count;
+			Value[1]+=Count;
+
+			std :: cout << "thread:" << :: GetCurrentThreadId()
+					<<"  Value[0]:"<<Value[0]<<"  Value[1]:" << Value[1] << std :: endl;
+				
+			:: Sleep(2000);
+
+			// 释放对数值的访问
+			:: ReleaseMutex(hMutexValue);	
+		}
+		return(0);
+	}
+
+	DWORD WINAPI DecThreadProc(LPVOID lpParam)
+	{
+		int Count;
+
+		Count=(int)lpParam;
+
+		// 循环，直到所有的访问都结束为止
+		while (1)
+		{
+			// 等待访问数值
+			:: WaitForSingleObject(hMutexValue, INFINITE);
+
+			// 改变并显示该值
+			Value[0]-=Count;
+			Value[1]-=Count;
+
+			std :: cout << "thread:" << :: GetCurrentThreadId()
+					<<"  Value[0]:"<<Value[0]<<"  Value[1]:" << Value[1] << std :: endl;
+				
+			:: Sleep(2000);
+
+			// 释放对数值的访问
+			:: ReleaseMutex(hMutexValue);	
+		}
+		return(0);
+	}
+
+int main(int argc, char* argv[])
+{
+    	DWORD  dwThreadID[2];//用于存储线程的ID
+	 
+		
+		Value[0]=100;
+		Value[1]=200;
+		
+		// 创建互斥体用于访问数值
+		hMutexValue=::CreateMutex(
+					NULL,			// 缺省的安全性
+					FALSE,		// 初始时不拥有。
+					          //一个Mutex在没有任何线程拥有的时候，是处于激发态的， 所以处于有信号状态。
+					NULL);   	// 匿名的，用于线程间。
+					
+		//创建加法线程			
+		hThreadInc=::CreateThread(
+					NULL,			// 缺省的安全性
+					0,				// 缺省堆栈
+					IncThreadProc,	// 线程控制函数。
+					(LPVOID)10,      //线程参数，每次加10
+					0,				// 无特殊的标志
+					&dwThreadID[0]);		// 忽略返回的id
+					
+	  //创建减法线程
+    hThreadDec=::CreateThread(
+					NULL,			// 缺省的安全性
+					0,				// 缺省堆栈
+					DecThreadProc,	// 线程控制函数
+					(LPVOID)5,      //线程参数，每次减5
+					0,				// 无特殊的标志
+					&dwThreadID[1]);		// 忽略返回的id
+		
+	
+	  // 等待两者完成 (顺序并不重要)，等待时间为无限。
+	  // 也可以调用WaitForMultiObject()同时等待多个对象。
+	  if (hThreadInc!=INVALID_HANDLE_VALUE && hThreadDec!=INVALID_HANDLE_VALUE)
+		{
+		  ::WaitForSingleObject(hThreadInc, INFINITE);
+		  ::WaitForSingleObject(hThreadDec, INFINITE);
+		}
+
+	  return 0;
+}
+
+
+/*
+思考题：
+1、如果main()中没有语句WaitForSingleObject()会出现什么现象？为什么？
+2、本实验中互斥体保护了什么共享变量？
+3、两个线程hThreadInc和hThreadDec，如果一个线程运行到:: Sleep(1000)处，
+   另一线程很可能运行到哪个地方？处于什么状态？
+4、为什么hMutexValue等成员变量可以在两个线程间共享？
+*/

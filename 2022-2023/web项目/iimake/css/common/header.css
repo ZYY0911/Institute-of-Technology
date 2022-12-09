@@ -1,0 +1,67 @@
+/*头部样式*/
+.header {
+	width: 100%;
+	height: 65px;
+	background-color: rgb(33, 37, 46);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999999;
+
+}
+
+/*头部logo*/
+.logo {
+	float: left;
+	margin-left: 100px
+}
+.logo h2 {
+	color:white;
+	display: inline-block;
+	line-height: 65px;
+	font-weight: normal;
+	font-size:32px;
+}
+.logo span {
+	font-size: 16px;
+	color: #606266;
+	margin:0 10px;
+	cursor: pointer;
+	color: hsla(0,0%,100%,.5);
+}
+
+
+/*头部右侧导航栏样式*/
+.nav {
+	float: right;
+	margin-right: 100px;
+}
+.nav-left {
+	float: left;
+}
+.nav-right {
+	float: right;
+	margin: 0 10px
+}
+.nav .nav-left a {
+	display: inline-block;
+	color: rgb(178, 182, 194);
+	line-height: 65px;
+	font-size: 16px;
+	margin: 0 20px;
+}
+#active {
+	color: white;
+}
+.nav-right a {
+	display: inline-block;
+	color: rgb(178, 182, 194);
+	line-height: 35px;
+	width: 100px;
+	height: 35px;
+	margin-top: 15px;
+	text-align: center;
+
+}
+/*导航栏样式完成*/
+

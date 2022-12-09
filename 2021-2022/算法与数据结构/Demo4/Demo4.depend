@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1639986415 source:d:\demo4\main.cpp
+	<iostream>
+	<malloc.h>
+	<stdio.h>
+	<string>
+	<string.h>
+	<windows.h>
+

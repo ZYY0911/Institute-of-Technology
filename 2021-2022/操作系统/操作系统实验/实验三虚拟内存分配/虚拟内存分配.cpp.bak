@@ -1,0 +1,88 @@
+// 虚拟内存分配.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+# include <windows.h>
+# include <iostream>
+void FillZero(LPVOID pBlock, DWORD dwSize)
+{
+	_try
+	{
+		BYTE* arFill = (BYTE *) pBlock;
+		for (DWORD dwFill = 0; dwFill < dwSize; ++dwFill)
+		{
+		  arFill [dwFill] = 0; 
+		}
+		std :: cout << "Memory zeroed." << std :: endl;
+	}
+    _except(EXCEPTION_EXECUTE_HANDLER)
+	{
+	   std :: cout << "Could not zero memory. " << std :: endl;
+	}
+}
+
+int main(int argc, char* argv[])
+{
+	LPVOID pBlock;
+
+	//1G大小
+	DWORD c_dwGigabyte = 1 << 30;
+	//1M大小
+	DWORD c_dwMegabyte = 1 << 20;
+	
+	//以下运行4种内存分配方式，分别调用FillZero（），
+	//相当于使用这些内存，测试内存操作是否成功。
+
+	//分配方式1
+	pBlock = :: malloc(c_dwGigabyte) ;
+	:: FillZero (pBlock, c_dwMegabyte) ;
+	:: free(pBlock) ;
+	
+	//分配方式2
+	pBlock = :: VirtualAlloc(
+	NULL,				      // 不指定起始地址
+	c_dwGigabyte,	    // 要求1GB
+	MEM_COMMIT,		    // 对应的交换文件页（磁盘）和所要求的页表被留出来，然而，
+	                  // 仍然没有物理RAM被分配，
+	                  //只有当程序访问这部分内存时RAM内存才会被真正分配。
+	PAGE_READWRITE) ;	// 对此的读写操作
+	
+	:: FillZero(pBlock, c_dwMegabyte) ;
+	:: VirtualFree(pBlock, 0, MEM_RELEASE) ;
+	
+	//分配方式3
+	pBlock = :: VirtualAlloc(
+	NULL,				       // 不指定起始地址
+	c_dwGigabyte,		   // 要求1GB
+	MEM_RESERVE,		   // 不调配物理存储
+	PAGE_READWRITE) ;	 // 对此的读写操作
+	
+	:: FillZero(pBlock, c_dwMegabyte) ;
+	:: VirtualFree(pBlock, 0, MEM_RELEASE) ;
+	
+	//分配方式4
+	pBlock = :: VirtualAlloc(
+	NULL,				       // 不指定起始地址
+	c_dwGigabyte,	     // 要求1GB
+	MEM_RESERVE,		   // 不调配物理存储
+	PAGE_READWRITE) ;	 // 对此的读写操作
+	
+	//给虚拟空间调配物理内存。
+	:: VirtualAlloc(
+	pBlock,
+	c_dwMegabyte,
+	MEM_COMMIT,       // 对应的交换文件页（磁盘）和所要求的页表被留出来，然而，
+	                  // 仍然没有RAM被分配，只有当程序访问这部分内存时RAM内存才会被真正分配。
+	PAGE_READWRITE) ;
+
+	:: FillZero(pBlock, c_dwMegabyte) ;
+	:: VirtualFree(pBlock, 0, MEM_RELEASE) ;
+
+	return 0;
+}
+
+/*
+思考题：
+1、访问没有提交的进程空间能成功吗？
+2、使用MEM_COMMIT标志调用VirtualAlloc（）成功后物理内存已经分配了吗？
+*/

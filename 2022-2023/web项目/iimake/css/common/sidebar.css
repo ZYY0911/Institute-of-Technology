@@ -1,0 +1,101 @@
+/* 返回顶部开始 */
+.toTop {
+	position: fixed;
+	right: 10px;
+	bottom: 60px;
+	width: 55px;
+	text-align: center;
+	z-index: 99;
+	background-color: #fff;
+}
+
+.consulting {
+	background: url(../../img/zixun.png) no-repeat 14px 14px;
+}
+
+.consulting:hover,
+.phone:hover {
+	background-color: #2f54eb;
+	background-image: none;
+}
+
+.consulting:hover span,
+.phone:hover span {
+	display: block;
+}
+
+.phone:hover .telShow {
+	height: 84px;
+}
+
+.phone {
+	background: url(../../img/dianhua.png) no-repeat 14px 14px;
+}
+
+.consulting,
+.phone {
+	height: 54px;
+	line-height: 48px;
+	position: relative;
+	cursor: pointer;
+}
+
+.btop {
+	cursor: pointer;
+	width: 100%;
+	padding: 15px 0;
+	color: #abbad5;
+	border-top: 1px solid #eee;
+}
+
+.consulting span,
+.phone span {
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #fff;
+	width: 30px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top: -16px;
+	margin-left: -15px;
+}
+
+.telShow {
+	width: 170px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -30px;
+	right: 60px;
+	text-align: left;
+	height: 0px;
+	overflow: hidden;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.telShow h6 {
+	font-size: 13px;
+	font-weight: 700;
+	padding: 10px 20px;
+	line-height: 15px;
+	padding-bottom: 0;
+}
+
+.telShow p {
+	font-size: 16px;
+	color: #ee5238;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 5px 20px;
+}
+
+.telShow div {
+	font-size: 11px;
+	background-color: #f7f7f7;
+	padding: 5px 20px;
+	line-height: 20px;
+}

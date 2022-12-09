@@ -1,0 +1,111 @@
+.working .items:hover {
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.working {
+    width: 1200px;
+    margin: 0 auto;
+}
+.working .title {
+    font-size: 32px;
+    color: rgba(0,0,0,.996078);
+    text-align: left;
+    padding-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.working .js {
+    color: #898989;
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+}
+.fabox {
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fabox .items {
+    width: 383px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    background: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.fabox .items .imgbox {
+    width: 383px;
+}
+.fabox .items .imgbox img {
+    width: 100%;
+    height: 220px;
+}
+.fabox .items p {
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.fabox .items .working-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
+
+}
+.jycg-btn {
+    /* padding-left: 100px; */
+    flex-direction: row-reverse !important;
+}
+.fabox .items .working-btn a {
+    font-size: 14px;
+    color: #999;
+    line-height: 30px;
+    position: relative;
+    bottom: -16px;
+}
+.content {
+    height: 1000px;
+    margin-top: 50px;
+}
+.items .jg-btn {
+    background-color: rgb(64, 158, 255);
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.items .jg-btn span {
+    color: white;
+}
+
+.wds1 {
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-weight: 400;
+    color: #898989;
+    line-height: 24px;
+    padding: 15px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cg-btn {
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: hsla(0,0%,100%,0);
+    border: 1px solid #fff;
+    box-shadow: 0 13px 27px 0 rgb(75 96 179 / 24%);
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+
